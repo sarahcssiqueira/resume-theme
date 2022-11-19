@@ -1,0 +1,42 @@
+.banner {
+	background-color: #1a0024;
+	padding: 5rem; 
+	text-align: center;
+}
+
+.banner section h1{ 
+	font-weight: 400; 
+	font-size: 3rem;
+	line-height: 3rem; 
+	color: #ffffff; 
+	padding: 2rem;
+}
+
+.banner section span{ 
+	color:white; 
+	letter-spacing: 0.1rem; 
+   	font-weight: 400; 
+   	font-size: 1rem; 	
+	padding: 2rem; 
+}
+
+.bannerInfo {
+	color:white; 
+	display: flex; 
+	flex: row;
+	justify-content: center; 
+	padding: 1rem;
+}
+
+.bannerInfo li {
+	list-style-type: none; 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center;
+}
+
+.bannerInfo i {
+	padding: 0.2rem;
+	font-size:0.9rem;
+	color:#d5004a;
+}

@@ -1,0 +1,38 @@
+.contact {
+	background:#1a0024; 
+	color: white; 
+	padding:1rem; 
+	text-align: center;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	h2,
+	p,
+	i{
+		text-align: center;
+		padding:1rem;
+	}
+}
+
+.contactIcons {
+	list-style: none; 
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	li,
+	a {
+		border-radius: 100%; 
+		color: #FFF; 
+		width: 2rem; 
+		height: 2rem; 
+		text-decoration: none;
+		display:flex; 
+		justify-content: center; 
+		align-items: center; 
+		font-size: 1.5rem; 
+	} 
+	&:hover{
+		background-color:#d5004a; 
+		color: white; 
+	}
+}

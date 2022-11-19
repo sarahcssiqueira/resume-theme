@@ -1,0 +1,77 @@
+@import "variables";
+
+.header{
+	z-index: 5;
+	background-color: $background; 
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+.headerTitle{
+	text-transform:capitalize; 
+	font-size: 1.2rem; 
+	color: $titleHeader;
+    a {
+        text-transform:capitalize; 
+        font-size: 1.2rem;
+        color: $titleHeader; 
+        text-decoration: none;
+        &:hover {
+            text-transform:capitalize; 
+            font-size: 1.2rem;
+            color: white; 
+            background-color: blueviolet;
+        }
+    }
+}
+
+.headerMenu{
+	display: flex; 
+	justify-content: space-around;
+	width: 40%;
+}
+
+.headerMenuLinks {
+	list-style-type: none;
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-around;
+	width: 40%;
+}
+
+.headerMenu a{
+	font-size: 1rem;
+	text-decoration: none;
+	color:white;
+}
+
+.headerMenuMobile i {
+	color: white; 
+	font-size: 20px; 
+	cursor: pointer;
+}
+
+.headerIcons{
+	list-style: none; 
+	display: flex; 
+	align-items: center;
+}
+
+.headerIcons li a{
+	border-radius: 100%; 
+	color: #FFF; 
+	width: 2rem; 
+	height: 2rem; 
+	text-decoration: none;
+	display:flex; 
+	justify-content: center; 
+	align-items: center; 
+	font-size: 1.2rem; 
+}
+
+.headerIcons li a:hover{
+	background-color:#d5004a; 
+	color: white; 
+}

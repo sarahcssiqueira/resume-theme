@@ -1,0 +1,516 @@
+/*
+Theme Name: Resume Online Theme
+Version: 1.0
+Description: Lorem Ipsum
+Tags:
+Author: Sarah Siqueira
+Author URI:https://sarahcssiqueira.ga/
+*/
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+.sessions li {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+.sessions li:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+.sessions li:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.skills li {
+  padding-bottom: 1rem;
+}
+
+.time {
+  color: #2a2839;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 601px) {
+  .time {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .time {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Fonts */
+/* Colors */
+.header {
+  z-index: 5;
+  background-color: #1a0024;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerTitle {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: white;
+}
+.headerTitle a {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+.headerTitle a:hover {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: white;
+  background-color: blueviolet;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.headerMenuLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.headerMenu a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.headerMenuMobile i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headerIcons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.headerIcons li a {
+  border-radius: 100%;
+  color: #FFF;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.headerIcons li a:hover {
+  background-color: #d5004a;
+  color: white;
+}
+
+/* Fonts */
+/* Colors */
+.banner {
+  background-color: #1a0024;
+  padding: 5rem;
+  text-align: center;
+}
+
+.banner section h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.banner section span {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+.bannerInfo {
+  color: white;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bannerInfo li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bannerInfo i {
+  padding: 0.2rem;
+  font-size: 0.9rem;
+  color: #d5004a;
+}
+
+.skills {
+  background-color: green;
+  padding: 1rem;
+}
+.skills h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.skills li {
+  display: inline-block;
+  color: #373737;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #FFF;
+  border: 1px solid #D7D7D7;
+  border-radius: 27px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.skills li:hover {
+  background: blueviolet;
+  color: white;
+}
+
+.skillsIcons {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.skillsIcons i {
+  margin: 1rem;
+  font-size: 3rem;
+  color: #1a0024;
+}
+
+.downloadCV {
+  display: flex;
+  justify-content: center;
+}
+.downloadCV h2,
+.downloadCV p {
+  text-align: center;
+  padding: 1rem;
+}
+
+.button {
+  background-color: #d5004a;
+  color: white;
+  font-size: 1rem;
+  justify-items: center;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #d5004a;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+
+span.footer {
+  align-content: center;
+  display: flex;
+}
+
+.contact {
+  background: #1a0024;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact h2,
+.contact p,
+.contact i {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contactIcons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contactIcons li,
+.contactIcons a {
+  border-radius: 100%;
+  color: #FFF;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.contactIcons:hover {
+  background-color: #d5004a;
+  color: white;
+}
+
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #242424;
+  font-size: 0.9rem;
+}
+
+a, a:hover, a:focus {
+  color: blueviolet;
+}
+
+h2 {
+  display: inline-block;
+  font-weight: 2rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    z-index: 5;
+    background-color: #1a0024;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .headerTitle {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+  }
+  .headerTitle a {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+  }
+  .headerTitle a:hover {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: white;
+    background-color: blueviolet;
+  }
+  .headerMenu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+  .headerMenuLinks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+  }
+  .headerMenu a {
+    color: white;
+  }
+  .headerMenuMobile i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .headerIcons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .headerIcons li a {
+    border-radius: 100%;
+    color: #FFF;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .headerIcons li a:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+  .headerMenu {
+    position: absolute;
+    padding: 2rem;
+    right: 0px;
+    height: auto;
+    top: 10vh;
+    background-color: #d5004a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .headerMenu li {
+    opacity: 0;
+  }
+  .headerMenuMobile {
+    display: block;
+  }
+  .headerMenuMobile:hover {
+    display: block;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .banner {
+    background-color: #1a0024;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .banner section h1 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #ffffff;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .banner section span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .bannerInfo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+  .bannerInfo li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .bannerInfo i {
+    color: #d5004a;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+  }
+  .skillsIcons {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .skillsIcons i {
+    margin: 0.5rem;
+    font-size: 2rem;
+    color: #1a0024;
+  }
+}
+.headerMenuMobile-active {
+  transform: translateX(0%);
+  height: 30vh;
+}
+
+@-webkit-keyframes headerMenuFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes headerMenuFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .headerMenuMobile {
+    display: none;
+  }
+  .headerMenuLinks {
+    padding: 0.5rem;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

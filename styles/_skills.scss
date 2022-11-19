@@ -1,0 +1,36 @@
+.skills {
+	background-color: green;
+	padding: 1rem;
+	h2{
+	display: flex; 
+	justify-content: center;
+ }
+}
+
+.skills li{ 
+	display: inline-block; 
+	color: #373737; 
+	font-size: 16px; 
+	padding:10px 20px; 
+	background-color: #FFF; 
+	border: 1px solid #D7D7D7;
+	border-radius: 27px; 
+	margin-right: 15px; 
+	margin-bottom: 15px; 
+	font-weight: 500;
+	&:hover {
+		background: blueviolet; 
+		color: white;
+	}
+}
+
+.skillsIcons {
+	margin:3rem; 
+	display: flex; 
+	justify-content: center;
+}
+.skillsIcons i {
+	margin:1rem; 
+	font-size: 3rem; 
+	color:#1a0024;
+}

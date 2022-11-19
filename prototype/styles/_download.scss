@@ -1,0 +1,24 @@
+.downloadCV {
+	display: flex; 
+	justify-content: center;
+	h2,
+	p{
+		text-align: center;
+		padding:1rem;
+	}
+}
+
+.button {
+	background-color: #d5004a;
+	color:white; 
+	font-size: 1rem; 
+	justify-items: center; 
+	border: none;
+	border-radius: 1rem; 
+	padding: 1rem; 
+	text-decoration: none;
+&:hover {
+	background-color: #d5004a; 
+	color:white; 
+	font-size: 1.1rem;
+}}

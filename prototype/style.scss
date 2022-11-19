@@ -1,0 +1,252 @@
+/*
+Theme Name: Resume Online Theme
+Version: 1.0
+Description: Lorem Ipsum
+Tags:
+Author: Sarah Siqueira
+Author URI:https://sarahcssiqueira.ga/
+*/
+
+@import "./styles/timeline";
+@import "./styles/header";
+@import "./styles/variables";
+@import "./styles/banner";
+@import "./styles/skills";
+@import "./styles/download";
+@import "./styles/footer";
+@import "./styles/contact";
+
+
+* {
+	margin:0;
+	font-family: $fontMain;
+}
+
+body {
+	font-family:  $fontMain;
+	font-weight:400;
+	font-style: normal; 
+	color:#242424; 
+	font-size:0.9rem;
+}
+a,a:hover,a:focus {
+	color:blueviolet;
+}
+
+h2{
+	display: inline-block; 
+	font-weight: 2rem; 
+	font-size: 1.2rem;  
+	text-transform: capitalize;
+	margin-bottom: 1rem;
+}
+
+.container {
+	margin:3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (max-width:768px) {
+	
+.header{
+	z-index: 5;
+	background-color: #1a0024; 
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+}
+
+.headerTitle{
+	text-transform:capitalize; 
+	font-size: 1.2rem; 
+	color: white;
+}
+
+.headerTitle a{
+	text-transform:capitalize; 
+	font-size: 1.2rem;
+	color: white; 
+	text-decoration: none;
+}
+
+.headerTitle a:hover{
+	text-transform:capitalize; 
+	font-size: 1.2rem;
+	color: white; 
+	background-color: blueviolet;
+}
+
+.headerMenu{
+	list-style-type: none; 
+	display: flex; 
+	justify-content: space-around;
+	width: 40%;
+}
+
+.headerMenuLinks {
+	list-style-type: none; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: space-around;
+	width: 40%;
+}
+
+.headerMenu a{
+	color:white;
+}
+
+.headerMenuMobile i {
+	color: white; 
+	font-size: 20px; 
+	cursor: pointer;
+}
+
+.headerIcons{
+	list-style: none; 
+	display: flex; 
+	align-items: center; 
+}
+
+.headerIcons li a{ 
+	border-radius: 100%; 
+	color: #FFF; 
+	width: 1.5rem; 
+	height: 1.5rem; 
+	text-decoration: none;
+	display:flex; 
+	justify-content: center; 
+	align-items: center; 
+	font-size: 1rem; 
+}
+
+.headerIcons li a:hover{ 
+	background-color:blueviolet; 
+	color: white; 
+}
+
+.headerMenu {
+	position: absolute;
+	padding: 2rem;
+	right: 0px;
+	height: auto;
+	top: 10vh;
+	background-color: #d5004a;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	width: 50%;
+	transform: translateX(100%);
+	transition:transform 0.5s ease-in;
+}
+
+.headerMenu li {
+	opacity: 0;
+}
+
+.headerMenuMobile {
+	display: block;
+}
+
+.headerMenuMobile:hover {
+	display: block;
+	}
+
+body {
+	overflow-x: hidden;
+}
+
+.banner {
+	background-color: #1a0024; 
+	padding: 1.2rem; 
+	text-align: center;
+}
+
+.banner section h1{ 
+	font-weight: 400; 
+	font-size: 1.6rem; 
+	line-height: 2rem; 
+	color:#ffffff; 
+	padding: 1.5rem; 
+	text-align: center;
+}
+
+.banner section span {
+	color:white;display: flex;
+	justify-content: center; 
+	font-size: 1rem;
+}
+
+.bannerInfo {
+	color:white; 
+	display: flex;
+	flex-direction: column;  
+	justify-content: center; 
+	padding: 0.8rem;
+}
+
+.bannerInfo li {
+	list-style-type: none; 
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	padding: 0.8rem;
+	font-size: 0.9rem;
+}
+
+.bannerInfo i {
+	color:#d5004a; 
+	list-style-type: none; 
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	padding: 0.8rem; 
+	font-size: 1.5rem;
+}
+
+.skillsIcons {
+	margin: 2rem; 
+	display: flex; 
+	justify-content: center;
+}
+
+.skillsIcons i {
+	margin:0.5rem; 
+	font-size: 2rem; 
+	color:#1a0024;
+}
+	
+}
+
+.headerMenuMobile-active {
+	transform: translateX(0%);
+	height: 30vh;
+}
+
+@keyframes headerMenuFade{
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@media screen and (min-width:768px) {
+
+.headerMenuMobile {
+	display: none;
+}
+
+.headerMenuLinks {
+	padding:0.5rem;
+	list-style-type: none; 
+	text-decoration: none; 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-between;
+	width: 90%;}
+}
