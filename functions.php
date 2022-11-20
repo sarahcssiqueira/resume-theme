@@ -81,8 +81,6 @@ function rt_new_post_type_skills() {
         'author', 
         'thumbnail', 
         'excerpt', 
-        'custom-fields', 
-        'comments', 
         'revisions', 
         'post-formats', 
         );

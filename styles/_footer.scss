@@ -1,14 +1,12 @@
-/* Footer */
+@import "variables";
 
 .footer {
-	background: black; 
-	color: white; 
+	background: $backgroundDark; 
+	color: $textLight; 
 	padding:5%; 
-	text-align: center;
+	span {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
 }
-
-span.footer {
-	align-content: center; 
-	display: flex;
-}
-

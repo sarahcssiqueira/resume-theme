@@ -22,7 +22,9 @@
 
                     get_template_part( 'template-parts/content' , 'skills' );
 
-                    get_template_part( 'template-parts/content' , 'download' );
+                    /* 
+					Create feature 
+					get_template_part( 'template-parts/content' , 'download' ); */
 
                     get_template_part( 'template-parts/content' , 'contact' );
 					

@@ -15,15 +15,15 @@ Author URI:https://sarahcssiqueira.ga/
 @import "./styles/download";
 @import "./styles/footer";
 @import "./styles/contact";
-
+@import "./styles/posts";
 
 * {
 	margin:0;
-	font-family: $fontMain;
+	font-family: $fontPrimary;
 }
 
 body {
-	font-family:  $fontMain;
+	font-family:  $fontPrimary;
 	font-weight:400;
 	font-style: normal; 
 	color:#242424; 

@@ -58,10 +58,11 @@ ul, li {
 }
 
 /* Fonts */
+/*Font Sizes */
 /* Colors */
 .header {
   z-index: 5;
-  background-color: #1a0024;
+  background: #1a0024;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
@@ -91,19 +92,29 @@ ul, li {
   justify-content: space-around;
   width: 40%;
 }
+.headerMenu a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
 
 .headerMenuLinks {
-  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 40%;
 }
 
-.headerMenu a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.headerMenuLinks li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .headerMenuMobile i {
@@ -117,8 +128,8 @@ ul, li {
   display: flex;
   align-items: center;
 }
-
-.headerIcons li a {
+.headerIcons li,
+.headerIcons a {
   border-radius: 100%;
   color: #FFF;
   width: 2rem;
@@ -136,6 +147,10 @@ ul, li {
 }
 
 /* Fonts */
+/*Font Sizes */
+/* Colors */
+/* Fonts */
+/*Font Sizes */
 /* Colors */
 .banner {
   background-color: #1a0024;
@@ -180,8 +195,11 @@ ul, li {
   color: #d5004a;
 }
 
+/* Fonts */
+/*Font Sizes */
+/* Colors */
 .skills {
-  background-color: green;
+  background-color: white;
   padding: 1rem;
 }
 .skills h2 {
@@ -191,10 +209,10 @@ ul, li {
 
 .skills li {
   display: inline-block;
-  color: #373737;
+  color: #181818;
   font-size: 16px;
   padding: 10px 20px;
-  background-color: #FFF;
+  background-color: white;
   border: 1px solid #D7D7D7;
   border-radius: 27px;
   margin-right: 15px;
@@ -204,13 +222,17 @@ ul, li {
 .skills li a {
   text-decoration: none;
 }
-.skills li:hover {
+.skills li a:hover {
   background: blueviolet;
   color: white;
 }
 
-.skills a:hover {
-  color: red;
+.skills li:hover {
+  background: blueviolet;
+}
+
+.container p {
+  text-align: center;
 }
 
 .skillsIcons {
@@ -225,6 +247,9 @@ ul, li {
   color: #1a0024;
 }
 
+/* Fonts */
+/*Font Sizes */
+/* Colors */
 .downloadCV {
   display: flex;
   justify-content: center;
@@ -248,22 +273,25 @@ ul, li {
 .button:hover {
   background-color: #d5004a;
   color: white;
-  font-size: 1.1rem;
 }
 
-/* Footer */
+/* Fonts */
+/*Font Sizes */
+/* Colors */
 .footer {
   background: black;
   color: white;
   padding: 5%;
+}
+.footer span {
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-span.footer {
-  align-content: center;
-  display: flex;
-}
-
+/* Fonts */
+/*Font Sizes */
+/* Colors */
 .contact {
   background: #1a0024;
   color: white;
@@ -273,11 +301,16 @@ span.footer {
   flex-direction: column;
   justify-content: center;
 }
-.contact h2,
+.contact h2 {
+  font-size: 1.3rem;
+}
 .contact p,
 .contact i {
   text-align: center;
   padding: 1rem;
+}
+.contact i:hover {
+  color: white;
 }
 
 .contactIcons {
@@ -288,7 +321,7 @@ span.footer {
 }
 .contactIcons a {
   border-radius: 100%;
-  color: #FFF;
+  color: white;
   width: 2rem;
   height: 2rem;
   text-decoration: none;
@@ -300,7 +333,7 @@ span.footer {
 
 .contactIcons li {
   border-radius: 100%;
-  color: #FFF;
+  color: white;
   width: 2rem;
   height: 2rem;
   text-decoration: none;
@@ -312,6 +345,19 @@ span.footer {
 .contactIcons li:hover {
   background-color: #d5004a;
   color: white;
+}
+
+/* Fonts */
+/*Font Sizes */
+/* Colors */
+.postContent {
+  padding: 2rem;
+  background: red;
+}
+
+.postContentSkill {
+  padding: 2rem;
+  background: green;
 }
 
 * {

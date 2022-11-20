@@ -1,6 +1,7 @@
 <div class="contact">
 
 <h2>Contact me</h2>
+<p>Just send me a message or email.</p>
 <div class="contactIcons">
       <li>
           <a href="mailto:sarahcosiqueira@gmail.com" target="_blank">

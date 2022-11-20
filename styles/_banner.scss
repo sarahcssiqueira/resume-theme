@@ -1,5 +1,7 @@
+@import "variables";
+
 .banner {
-	background-color: #1a0024;
+	background-color: $background;
 	padding: 5rem; 
 	text-align: center;
 }
@@ -38,5 +40,5 @@
 .bannerInfo i {
 	padding: 0.2rem;
 	font-size:0.9rem;
-	color:#d5004a;
+	color:$hoverIcons;
 }

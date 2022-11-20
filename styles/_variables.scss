@@ -1,8 +1,22 @@
 /* Fonts */
 
-$fontMain: 'Poppins', sans-serif;
+$fontPrimary: 'Poppins', sans-serif;
+$fontSecondary: 'Poppins', sans-serif;
+
+/*Font Sizes */
+
+$fontSmall: 0.5rem;
+$fontMedium: 1rem;
+$fontLarge: 1.2rem;
 
 /* Colors */
 
-$titleHeader: white;
 $background: #1a0024;
+$backgroundLight:white;
+$backgroundDark:black;
+$highlight:blueviolet;
+$textLight: white;
+$textMedium:#181818;
+$textDark:$background;
+$btnBg:#d5004a;
+$hoverIcons:$btnBg;

@@ -1,16 +1,23 @@
+@import "variables";
+
 .contact {
-	background:#1a0024; 
-	color: white; 
+	background:$background ;
+	color: $textLight; 
 	padding:1rem; 
 	text-align: center;
 	display: flex;
 	flex-direction: column; 
 	justify-content: center;
-	h2,
+	h2 { 
+		font-size:1.3rem;
+		}
 	p,
 	i{
 		text-align: center;
 		padding:1rem;
+	}
+	& i:hover{
+		color:$textLight;
 	}
 }
 
@@ -21,7 +28,7 @@
 	justify-content: center;
 	a {
 		border-radius: 100%; 
-		color: #FFF; 
+		color: $textLight; 
 		width: 2rem; 
 		height: 2rem; 
 		text-decoration: none;
@@ -34,7 +41,7 @@
 
 .contactIcons li {
 	border-radius: 100%; 
-	color: #FFF; 
+	color: $textLight; 
 	width: 2rem; 
 	height: 2rem; 
 	text-decoration: none;
@@ -44,6 +51,6 @@
 	font-size: 1.2rem; 
 	&:hover{
 		background-color:#d5004a; 
-		color: white; 
+		color: $textLight; 
 	}
 }

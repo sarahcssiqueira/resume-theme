@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <header class="header">
@@ -31,16 +30,17 @@
         </div>
 
         <div class="headerMenu">
-              <ul class="headerMenuLinks">
-                <?php wp_nav_menu(
-					array(
-						'menu'=>'primary',
-						'container'=>'',
-						'theme_location'=>'primary',
-						'items_wrap'=>'<li>%3$s/<li>'
-						)
-					);?>
-              </ul>
+
+            <!-- Improve using class Walker {} -->
+                        
+                    <?php wp_nav_menu(
+                        array(
+                            'menu'=>'primary',
+                            'container'=>'',
+                            'theme_location'=>'primary',
+                            'items_wrap'=>'<li>%3$s</li>'
+                            )
+                        ); ?>
         </div>
 
             <!-- Hard Coded, for a better user experience, create widgets -->

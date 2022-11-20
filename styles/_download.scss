@@ -1,3 +1,5 @@
+@import "variables";
+
 .downloadCV {
 	display: flex; 
 	justify-content: center;
@@ -9,16 +11,16 @@
 }
 
 .button {
-	background-color: #d5004a;
-	color:white; 
-	font-size: 1rem; 
+	background-color: $btnBg;
+	color:$textLight;
+	font-size: $fontMedium; 
 	justify-items: center; 
 	border: none;
 	border-radius: 1rem; 
 	padding: 1rem; 
 	text-decoration: none;
 &:hover {
-	background-color: #d5004a; 
-	color:white; 
-	font-size: 1.1rem;
-}}
+	background-color: $btnBg; 
+	color:$textLight;
+}
+}

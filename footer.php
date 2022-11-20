@@ -10,10 +10,11 @@
 ?>
 
 <footer class="footer">
-      Hosted for free on <a href="https://vercel.com/">Vercel.</a> </span>
-    <span class="copyright">© 2022 All rights reserved.</span>
+  <span>
+      Resume Online Theme. Created from
+      <a href="https://sarahcssiqueira.ga/"> Sarah Siqueira Online CV Model.</a> 
+  </span>
+  <span class="copyright">© 2022 All rights reserved.</span>
 </footer>
-
-
 
 <?php wp_footer();?>

@@ -13,7 +13,7 @@
 
 <?php get_header(); ?>
 
-	<article class="container">
+	<div class="postContent">
 
 		<?php if ( have_posts () ) {
 
@@ -25,8 +25,6 @@
 				}
 			};?>
 
-		<?php the_posts_pagination ();?>
-
-	</article>
+		</div>
 
 <?php get_footer(); ?>
