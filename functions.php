@@ -15,8 +15,9 @@ function rt_register_styles() {
         
         $version = wp_get_theme()->get( 'Version' );
     
-        wp_enqueue_style('restheme_sytle', get_template_directory_uri()."/style.css", array(), $version,'all');
+        wp_enqueue_style('restheme_sytle', get_template_directory_uri()."/style.css", array('restheme_sytle_jquery'), $version,'all');
         wp_enqueue_style('restheme_sytle_font-awesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css", array(), '6.2.0','all');
+        wp_enqueue_style('restheme_sytle_jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '6.2.0','all');
     
     }
     
@@ -26,8 +27,8 @@ add_action('wp_enqueue_scripts','rt_register_styles');
 
 function rt_register_scripts() {
 
-    wp_enqueue_script('restheme_script_js', get_template_directory_uri()."/js/main.js", array(), '1.0',true);
-    wp_enqueue_script('restheme_script_jquery', "https://code.jquery.com/jquery-3.4.1.slim.min.js", array(), '3.4.1',true);
+    wp_enqueue_script('restheme_script_js', get_template_directory_uri()."/js/script.js", array(), '1.0',true);
+    wp_enqueue_script('restheme_script_jquery', "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '3.5.1',true);
     
 }
 
@@ -37,11 +38,11 @@ add_action('wp_enqueue_scripts','rt_register_scripts');
 /* Add theme suppports */
 
 function rt_theme_support () {
-    add_theme_support('title-tag');
+    add_theme_support ( 'title-tag' );
     
 }
 
-add_action ('after_setup_theme','rt_theme_support');
+add_action ( 'after_setup_theme' , 'rt_theme_support' );
 
 /*Register menus */
 
@@ -57,8 +58,17 @@ function rt_menus () {
 
 add_action ('init', 'rt_menus');
 
+/*Add custom header */
 
-
+function rt_custom_header_setup() {
+	$defaults = array(
+		'default-text-color' => '000',
+        'text'            =>'lalala',
+        'texttwo'            =>'',
+	);
+        add_theme_support( 'custom-header', $defaults );
+}
+add_action( 'after_setup_theme', 'rt_custom_header_setup' );
 
 
 /* Register Custom Post Type */
@@ -97,7 +107,7 @@ function rt_new_post_type_skills() {
         'labels' => $labels,
         'public' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'pets'),
+        'rewrite' => array('slug' => 'skills'),
         'has_archive' => true,
         'hierarchical' => false,
         );

@@ -1,9 +1,12 @@
 <div class="banner">
       <div class="container">      
             <section>
-              <span>Hi! I'm Sarah Siqueira</span>
+              <span>
+              Hi! I'm 
+              <?php echo get_bloginfo('name'); ?>
+             </span>
               <h1>
-                A software developer who believes that programming is like playing LEGO on real life.
+                <?php echo get_bloginfo('description'); ?>
               </h1>
             </section>
           
