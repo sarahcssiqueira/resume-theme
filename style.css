@@ -99,19 +99,15 @@ ul, li {
 }
 
 .headerMenuLinks {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 40%;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .headerMenuLinks li {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -131,7 +127,7 @@ ul, li {
 .headerIcons li,
 .headerIcons a {
   border-radius: 100%;
-  color: #FFF;
+  color: white;
   width: 2rem;
   height: 2rem;
   text-decoration: none;
@@ -352,12 +348,25 @@ ul, li {
 /* Colors */
 .postContent {
   padding: 2rem;
-  background: red;
+  background: white;
 }
 
-.postContentSkill {
-  padding: 2rem;
-  background: green;
+.titleContent {
+  color: #1a0024;
+  margin-bottom: 2rem;
+}
+
+.textContent {
+  color: #181818;
+  margin-bottom: 2rem;
+}
+
+.backButton a {
+  margin-top: 2rem;
+  color: blueviolet;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 * {
@@ -434,6 +443,11 @@ h2 {
     color: white;
   }
   .headerMenuMobile i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .headerMenuMobile a {
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -539,6 +553,7 @@ h2 {
   }
 }
 .headerMenuMobile-active {
+  color: white;
   transform: translateX(0%);
   height: 30vh;
 }

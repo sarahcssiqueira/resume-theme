@@ -1,3 +1,13 @@
+<?php
+/**
+ * Template part for displaying banner section.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ */
+
+?>
+
 <div class="banner">
       <div class="container">      
             <section>

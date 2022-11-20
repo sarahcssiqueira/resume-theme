@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying single posts.
+ * The template for displaying single custom posts:Skills.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -9,7 +9,7 @@
 
 <?php get_header();?>
 
-	<div class="postContentSkill">
+	<div class="postContent">
 
 			<?php if ( have_posts () ) {
 

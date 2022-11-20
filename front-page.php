@@ -10,7 +10,7 @@
 
 <?php get_header();?>
 
-	<article class="content">
+	<div class="content">
 
 		<?php if ( have_posts () ) {
 
@@ -22,8 +22,7 @@
 
                     get_template_part( 'template-parts/content' , 'skills' );
 
-                    /* 
-					Create feature 
+                    /* Create feature 
 					get_template_part( 'template-parts/content' , 'download' ); */
 
                     get_template_part( 'template-parts/content' , 'contact' );
@@ -31,6 +30,6 @@
 				}
 			};?>
 
-	</article>
+		</div>
 
 <?php get_footer();?>

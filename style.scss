@@ -94,15 +94,20 @@ h2{
 }
 
 .headerMenu a{
-	color:white;
+	color:$textLight;
 }
 
 .headerMenuMobile i {
-	color: white; 
+	color: $textLight;
 	font-size: 20px; 
 	cursor: pointer;
 }
 
+.headerMenuMobile a {
+	color: $textLight; 
+	font-size: 20px; 
+	cursor: pointer;
+}
 .headerIcons{
 	list-style: none; 
 	display: flex; 
@@ -220,6 +225,7 @@ body {
 }
 
 .headerMenuMobile-active {
+	color:$textLight;
 	transform: translateX(0%);
 	height: 30vh;
 }

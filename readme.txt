@@ -1,8 +1,33 @@
-Customize your name and headline
+# Resume Online Theme 
 
-Describe yiur skils - simply add a post on section Skills
+Customize your name and headline. Describe your skils: Simply add a skill and description.
 
-Avalailabe you CV
-Requires Quick Download Button pkugin to works
-In order do wokrs propery, your CV file should have the name "resume" and ve in pdf:
- echo do_shortcode('[quick_download_button title="Download" url="http://yoursite/wp-content/upload/fileto_resume.pdf]');
+## Next features
+
+- Custom Header Image support
+- Donwload CV section
+- Widgets for customize icons icons
+
+# Structure of files in the theme directory
+
+- root
+    - style.css: information about the theme (they will appear in the Dashboard theme manager).
+    - functions.php: theme settings.
+    - header.php: title, meta tags, libraries and the like.
+    - footer.php: libraries loaded at the bottom of the page, and the like.
+    - index.php: home display control.
+    - page.php: page display control.
+    - single.php: post display control.
+    - comments.php: comment display control.
+    - 404.php: non-existing page error.
+    - sidebar.php: control of the things that appear in the sidebar.
+    - searchform.php: search field control.
+    - screenshot.png: thumbnail of the image that will appear in the themes administration area in the Wordpress Dashboard.
+- js
+    - script.js
+- prototype
+    - original project wich inpisred the theme
+- styles
+    - contains partials scss files 
+- template-parts
+    - 

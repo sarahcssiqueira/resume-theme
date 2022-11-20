@@ -11,8 +11,8 @@
 
 <footer class="footer">
   <span>
-      Resume Online Theme. Created from
-      <a href="https://sarahcssiqueira.ga/"> Sarah Siqueira Online CV Model.</a> 
+      Resume Online Theme.
+      <a href="https://sarahcssiqueira.ga/">Sarah Siqueira.</a> 
   </span>
   <span class="copyright">© 2022 All rights reserved.</span>
 </footer>

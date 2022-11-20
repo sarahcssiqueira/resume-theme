@@ -1,4 +1,12 @@
+<?php
+/**
+ * Template part for displaying skills section.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ */
 
+?>
 
 <div class="skills" id="skills">
         <div class="container">

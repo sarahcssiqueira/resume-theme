@@ -2,11 +2,23 @@
 
 .postContent {
     padding:2rem;
-    background: red;
+    background: $backgroundLight;
 }
 
+.titleContent {
+    color:$textDark;
+    margin-bottom: 2rem;
+}
 
-.postContentSkill {
-    padding:2rem;
-    background: green;
+.textContent {
+    color: $textMedium;
+    margin-bottom: 2rem;
+}
+
+.backButton a { 
+    margin-top:2rem;
+    color:$highlight;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
 }

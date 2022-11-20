@@ -1,3 +1,15 @@
+<?php
+/**
+ * Template part for displaying download section.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ */
+
+?>
+
+<?php /* New feature for update */ ?>
+
 <div class="downloadCV" id="downcv">
         <div class="container">
           <h2>Download Resume</h2>
@@ -9,4 +21,3 @@
         </button>
         </div>
 </div>
-    

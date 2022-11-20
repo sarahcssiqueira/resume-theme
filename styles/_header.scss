@@ -34,24 +34,20 @@
 	a{
 		font-size: 1rem;
 		text-decoration: none;
-		color:$backgroundLight
+		color:$textLight;
 	}
 }
 
 .headerMenuLinks {
+	color: $textLight;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: space-around;
 	width: 40%;
 }
 
-.menu {
-	display: flex; 
-	flex-direction: column; 
-	justify-content: space-around;
-}
-
 .headerMenuLinks li {
+	color:$textLight;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: center;
@@ -70,7 +66,7 @@
 	li, 
 	a{
 		border-radius: 100%; 
-		color: #FFF; 
+		color: $textLight; 
 		width: 2rem; 
 		height: 2rem; 
 		text-decoration: none;

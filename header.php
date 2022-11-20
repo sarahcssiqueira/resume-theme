@@ -30,8 +30,9 @@
         </div>
 
         <div class="headerMenu">
+            <div class="headerMenuLinks">
 
-            <!-- Improve using class Walker {} -->
+            <!-- In the future, improve it using class Walker {} -->
                         
                     <?php wp_nav_menu(
                         array(
@@ -41,9 +42,10 @@
                             'items_wrap'=>'<li>%3$s</li>'
                             )
                         ); ?>
+            </div>
         </div>
 
-            <!-- Hard Coded, for a better user experience, create widgets -->
+            <!-- Hard Coded, in the future for a better user experience, create widgets -->
 
         <div class="headerIcons">
             <li><a href="mailto:sarahcosiqueira@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>

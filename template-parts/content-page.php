@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying archives.
+ * Template part for displaying the content on static pages.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -27,11 +27,6 @@
 
 	<div class="textContent">
 			<?php the_excerpt(); ?>
-    </div>
-					
-    
-	<div class="backButton">
-		<a class="more-link" href="<?php the_permalink();?>">Read more &rarr;</a>
     </div>
 
 </div>
