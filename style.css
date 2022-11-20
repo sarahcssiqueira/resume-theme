@@ -201,9 +201,16 @@ ul, li {
   margin-bottom: 15px;
   font-weight: 500;
 }
+.skills li a {
+  text-decoration: none;
+}
 .skills li:hover {
   background: blueviolet;
   color: white;
+}
+
+.skills a:hover {
+  color: red;
 }
 
 .skillsIcons {
@@ -279,7 +286,6 @@ span.footer {
   flex-direction: row;
   justify-content: center;
 }
-.contactIcons li,
 .contactIcons a {
   border-radius: 100%;
   color: #FFF;
@@ -291,7 +297,19 @@ span.footer {
   align-items: center;
   font-size: 1.5rem;
 }
-.contactIcons:hover {
+
+.contactIcons li {
+  border-radius: 100%;
+  color: #FFF;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.contactIcons li:hover {
   background-color: #d5004a;
   color: white;
 }

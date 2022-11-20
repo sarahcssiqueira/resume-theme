@@ -18,10 +18,17 @@
 	margin-right: 15px; 
 	margin-bottom: 15px; 
 	font-weight: 500;
+	a{
+		text-decoration: none;
+	}
 	&:hover {
 		background: blueviolet; 
 		color: white;
 	}
+}
+
+.skills a:hover { 
+	color:red;
 }
 
 .skillsIcons {

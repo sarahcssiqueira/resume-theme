@@ -19,7 +19,6 @@
 	display: flex; 
 	flex-direction: row;
 	justify-content: center;
-	li,
 	a {
 		border-radius: 100%; 
 		color: #FFF; 
@@ -31,6 +30,18 @@
 		align-items: center; 
 		font-size: 1.5rem; 
 	} 
+}
+
+.contactIcons li {
+	border-radius: 100%; 
+	color: #FFF; 
+	width: 2rem; 
+	height: 2rem; 
+	text-decoration: none;
+	display:flex; 
+	justify-content: center; 
+	align-items: center; 
+	font-size: 1.2rem; 
 	&:hover{
 		background-color:#d5004a; 
 		color: white; 

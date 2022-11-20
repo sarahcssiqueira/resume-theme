@@ -24,25 +24,22 @@
                 <li>Knowledge about CI/CD</li>
                 <li>Knowledge about Agile methods: Scrum, Kanban.</li>
 
-              <?php 
-                $args = array(
+              <?php $args = array(
                   'post_type' =>'skills',
-                  'posts_per_page'=>-1,
-                );
+                  'posts_per_page'=>-1, );
 
                 $post_data = new WP_Query($args);
 
 
-                if ( $post_data-> have_posts() ) {
-                    while ( $post_data-> have_posts() ) {
-                    $post_data->the_post();
-                    ?>
+                if ( $post_data-> have_posts () ) {
+                    while ( $post_data-> have_posts () ) {
 
-                    <li> <a href="<?php the_permalink();?>">
-                    <?php echo get_the_title();
-                      
-                    ?>
-                    </a>
+                    $post_data->the_post (); ?>
+
+                    <li> 
+                      <a href="<?php the_permalink();?>">
+                      <?php echo get_the_title();?>
+                      </a>
                     </li>
 
                   <?php
