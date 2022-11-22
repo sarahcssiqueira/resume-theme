@@ -6,9 +6,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  */
-?>
-
-<?php
+?><?php
 
 /* Register custom style */
 

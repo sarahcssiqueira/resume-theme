@@ -7,6 +7,7 @@ Customize your name and headline. Describe your skils: Simply add a skill and de
 - Custom Header Image support
 - Donwload CV section
 - Widgets for customize icons icons
+- Language support .pot file
 
 # Structure of files in the theme directory
 
