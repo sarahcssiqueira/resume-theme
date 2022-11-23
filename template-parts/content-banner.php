@@ -13,7 +13,7 @@
             <section>
               <span>
               Hi! I'm 
-              <?php echo get_bloginfo('name'); ?>
+              <?php echo get_post_meta( $post->ID , 'name', true);?>
              </span>
               <h1>
                 <?php echo get_bloginfo('description'); ?>
@@ -23,11 +23,20 @@
           <!-- New feature to next update, create a widget so user can customize it -->
             
             <section>
-              <!--<div class="bannerInfo">
-                <li><i class="fa-solid fa-location-dot"></i> Based in Brazil</li>
-                <li><i class="fa-solid fa-clock"></i> UTC -3</li>
-                <li><i class="fa-solid fa-medal"></i>+ 6 years experience</li>
-              </div> -->
+
+             
+              <div class="bannerInfo">
+                <li><i class="fa-solid fa-location-dot"></i> 
+                  <?php echo get_post_meta( $post->ID , 'basedLocation', true);?>
+              </li>
+              
+                <li><i class="fa-solid fa-clock"></i> 
+                  <?php echo get_post_meta( $post->ID , 'timezone', true);?>
+                </li>
+                <li><i class="fa-solid fa-medal"></i>
+                  <?php echo get_post_meta( $post->ID , 'experienceTime', true);?>
+                </li>
+              </div>
             </section>
       </div>
 </div>

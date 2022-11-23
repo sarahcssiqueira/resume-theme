@@ -6,30 +6,17 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  */
-?>
-
-<?php get_header();?>
+?><?php get_header();?>
 
 	<div class="content">
 
-		<?php if ( have_posts () ) {
+		<?php get_template_part( 'template-parts/content' , 'banner' ); ?>
 
-				while ( have_posts ()) {
+        <?php get_template_part( 'template-parts/content' , 'skills' ); ?>
 
-					the_post();
-					
-					get_template_part( 'template-parts/content' , 'banner' );
+    	<?php get_template_part( 'template-parts/content' , 'contact' ); ?>
 
-                    get_template_part( 'template-parts/content' , 'skills' );
 
-                    /* Create feature 
-					get_template_part( 'template-parts/content' , 'download' ); */
-
-                    get_template_part( 'template-parts/content' , 'contact' );
-					
-				}
-			};?>
-
-		</div>
+	</div>
 
 <?php get_footer();?>
