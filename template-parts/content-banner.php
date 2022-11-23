@@ -1,14 +1,13 @@
 <?php
 /**
- * Template part for displaying banner section.
+ * Template part for displaying banner section, with custom fields
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link https://wordpress.org/support/article/custom-fields/
+ * 
  *
  */
-
-?>
-
-<div class="banner">
+?><div class="banner">
       <div class="container">      
             <section>
               <span>
@@ -18,12 +17,9 @@
               <h1>
                 <?php echo get_bloginfo('description'); ?>
               </h1>
-            </section>
-          
-          <!-- New feature to next update, create a widget so user can customize it -->
+            </section>    
             
             <section>
-
              
               <div class="bannerInfo">
                 <li><i class="fa-solid fa-location-dot"></i> 

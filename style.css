@@ -1,11 +1,15 @@
 /*
 Theme Name: Resume Online Theme
-Version: 1.0
-Description: Lorem Ipsum
+Version: 1.0 Beta
+Description: WordPress Theme inspired on a Resume Online
 Tags:
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
+*
 */
+/*--------------------------------------------------------------------------------------------------------
+* Imports
+---------------------------------------------------------------------------------------------------------*/
 ul, li {
   list-style: none;
   padding: 0;
